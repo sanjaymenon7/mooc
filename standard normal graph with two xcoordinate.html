@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+      <link rel="stylesheet" href="bootstrap.css">
+      <link rel="stylesheet" href="bootstrapnew.css">
+      <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+      <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+      <![endif]-->
+   </head>
+   <body>
+      <!-- <div id="wrap"> reqd for sticky footer -->
+      <div class="container">
+         <div class="row-fluid demo">
+            <div class="span12" id="center">
+               <div class="row-fluid">
+                  <div id="demo"  class=" span9 ">
+                  </div>
+                  <div class="span3 clearfix" id='ui-container'>
+                  </div>
+               </div>
+               <hr>
+               <div class="row-fluid">
+                  <div>
+                     <div class="row">
+                        <div class ="col-md-4">
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="Z1.png" alt="Z1 Formula" height="100" width="100">&nbsp;=<span id="z1value"></span>
+                        </div>
+                     </div>
+                       <br>
+                       <div  class="row">
+                        <div class ="col-md-4">
+                           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="Z2.png" alt="Z2 Formula" height="100" width="100">&nbsp;=<span id="z2value"></span>
+                        </div>
+                     </div>
+                       <br>
+                     <div class="row">
+                        <div class="col-md-8">
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Probability Corresponding to z1 from the standard normal table =<span id="z1pvalue"></span>
+                        </div>
+                     </div>
+                     <br>
+                     <div class="row">
+                        <div class="col-md-8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Probability Corresponding to z2 from the standard normal table =<span id="z2pvalue"></span> </div>
+                     </div>
+                     <br>
+                     <div class="row">
+                        <div class="col-md-6">
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Probability P(Z&lt;= z2) – P(Z &lt;=z1)=<span id="zpvaluetotal"></span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="push"></div>
+      </div>
+      <script src="jquery.min.js"></script>
+      <script type='text/javascript' src='df213c99c115cd5296f7587423f52eac.js'></script>
+      <script type="text/x-mathjax-config">
+         MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+      </script>
+      <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      <script src="flotr2.js"></script>
+      <script src="zCalc.js"></script>
+      <script src="jquery.flot.js"></script>
+      <script src="normaldistribution2.js"></script>
+      <script src="selection.js"></script>
+      <script src="bootstrap.js"></script>
+      <script>
+         //ASSET SERVING
+         var assetPath = "https://s3-us-west-2.amazonaws.com/academo-assets";
+         
+         $(document).trigger({
+         	type: "scriptLoaded"
+         });
+      </script>
+   </body>
+</html>
